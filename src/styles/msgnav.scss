@@ -1,0 +1,96 @@
+/* 额度台账详情页中电梯导航的通用样式 */
+.fixed-header /deep/ {
+  position: fixed;
+  top: 111px;
+  right: 0;
+  width: calc(100% - 244px);
+  z-index: 5;
+  transition: width 0.28s;
+  .el-card__body {
+    display: flex;
+    justify-content: space-between;
+    .el-select {
+      width: 25%;
+    }
+    .el-steps {
+      width: 75%;
+      .el-step {
+        .el-step__head.is-finish {
+          color: #000;
+          border-color: #000;
+          cursor: pointer;
+        }
+        .el-step__title.is-finish {
+          color: #000;
+        }
+        .el-step__head.is-process {
+          color: #029f4a;
+          border-color: #029f4a;
+          cursor: pointer;
+        }
+        .el-step__title.is-process {
+          color: #029f4a;
+        }
+        .el-step__head.is-wait {
+          color: #000;
+          border-color: #000;
+          cursor: pointer;
+        }
+        .el-step__title.is-wait {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+// el-card 通用样式
+.el-card /deep/ {
+  margin-bottom: 2vh;
+  .el-card__body {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 20px 5px 20px;
+    // 表头标题信息
+    span {
+      display: block;
+      margin-bottom: 1.5vh;
+    }
+    // 表格头部添加底部线条
+    .el-table {
+      .el-table__header-wrapper {
+        border-bottom: 1px solid #ebeef5;
+      }
+    }
+    // 分页部分 样式
+    .el-pagination {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1.5vh;
+    }
+  }
+}
+
+// 基本信息部分 样式
+.basicInfo {
+  padding-top: 13.5vh;
+  .el-card__body {
+    .el-form {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .el-form-item /deep/ {
+        .el-form-item__label {
+          font-weight: normal;
+        }
+        .el-form-item__content {
+          .el-input {
+            .el-input__inner {
+              color: #606266;
+            }
+          }
+        }
+      }
+    }
+  }
+}

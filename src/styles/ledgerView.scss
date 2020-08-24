@@ -1,0 +1,45 @@
+.viewContainer {
+  padding: 2vh 0.5vw;
+  // 通用样式
+  .topInfo,
+  .leftChart,
+  .rightTable,
+  .leftTabel,
+  .rightChart {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #ccc;
+  }
+  // 第一层基本信息部分 样式
+  .topInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid #eee;
+    padding: 2vh 1vw;
+    // border-radius: 5px;
+    // box-shadow: 2px 2px 4px #ccc;
+    .leftCon {
+      span {
+        margin-right: 1vw;
+      }
+    }
+    .rightCon {
+      .btn {
+        margin-left: 25px;
+      }
+    }
+  }
+  // 第二层 图+表 样式
+  .chartTable {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 0;
+    .leftChart {
+      width: 69%;
+    }
+    .rightTable {
+      width: 29%;
+    }
+  }
+}

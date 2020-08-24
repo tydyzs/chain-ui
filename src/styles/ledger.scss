@@ -1,0 +1,113 @@
+.container {
+  padding: 10px 15px;
+
+  .el-table th.gutter {
+    display: table-cell !important;
+  }
+
+  .el-select {
+    display: block;
+  }
+
+  // 搜索区样式
+  .search {
+    .el-form /deep/ {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .el-col {
+        margin-bottom: 0;
+        .el-form-item {
+          .el-form-item__label {
+            // color: #252525;
+            font-weight: normal;
+          }
+        }
+      }
+
+      .el-col:last-child {
+        .el-form-item {
+          .el-form-item__content {
+            display: flex;
+
+            .el-button {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 表格区样式
+  .table {
+    .el-table /deep/ {
+      td, th {
+        padding: 4px 0;
+      }
+      // th.has-gutter {
+      //   display: table-cell !important;
+      // }
+      .el-table__header-wrapper {
+        border-bottom: 1px solid #ebeef5;
+
+        .has-gutter {
+          tr {
+            th {
+              .cell {
+                color: #252525;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+
+      .el-table__fixed-right {
+        .el-table__fixed-header-wrapper {
+          .el-table__header {
+            tr {
+              th:last-child {
+                .cell {
+                  color: #252525;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .textBtn {
+        color: #029f4a;
+      }
+    }
+  }
+
+  // 分页区样式
+  .pageination {
+    float: right;
+    padding-top: .8vh;
+  }
+
+  .deptDialog /deep/ {
+    .el-dialog__body {
+      padding: 30px 20px 45px;
+    }
+    .searchOrg {
+      .btns {
+        .el-form-item__content {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+}
+
+
